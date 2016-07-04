@@ -3,9 +3,10 @@
 /* ------------------------------------------------- */
 
 html, body {
+	overflow: auto;
 	margin: 0;
 	width: 100%;
-	background-color: #e2e2e2;
+	height: auto;
 	font-family: Georgia, serif;
 }
 
@@ -57,7 +58,7 @@ html, body {
 	font-size: 0.8em;
 	font-style: italic;
 	font-weight: bold;
-	color: #ea443e;
+	color: #6C7A89;
 }
 
 hr{
@@ -82,14 +83,14 @@ hr{
 .nav-head{
 	font-size: 80%;
 	background-color: #fff;
-	padding: 1em 0.25em 1em 0.25em;
+	padding: 2em 2em 2em 2em;
 	width: 100%;
 }
 
 /* ---------- NAVIGATION STEPS ---------- */
 
 .nav-steps{
-	background-color: #ea443e;	
+	background-color: #6C7A89;	
 	color: #FFF;
 	text-align: center;
 	font-size: 80%;
@@ -112,9 +113,8 @@ hr{
 
 .stepThree{
 	cursor: pointer;
-	margin: 0.25em 0 0 0;
-	padding: 0;
-	font-size: 2em;
+	line-height: 1.2em;
+	font-size: 1.2em;
 }
 
 .stepThree:hover{
@@ -154,9 +154,9 @@ hr{
 	transition: all 200ms linear;
 	cursor: pointer;
 	border-radius: 10em;
-	color: #ea443e;
+	color: #6C7A89;
 	background-color: #ffffff;
-	border: 1px solid #ea443e;
+	border: 1px solid #6C7A89;
 	padding: 0.5em 1em 0.5em 1em;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 0.8em;
@@ -165,9 +165,9 @@ hr{
 }
 
 .tags:hover{
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(234,68,62,0.5);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(234,68,62,0.5);
-	box-shadow: 0px 0px 5px 0px rgba(234,68,62,0.5);
+	border: 1px solid #6C7A89;
+	color: #ffffff;
+	background-color: #6C7A89;
 }
 
 .txt-visible{
@@ -176,8 +176,8 @@ hr{
 	opacity: 1;
 }
 
-.half-opq{
-	opacity: 0;
+.fadeout{
+	opacity: 0 !important;
 }
 
 /* TAGS • ANIMATIONS */
@@ -188,9 +188,9 @@ hr{
 }
 
 .tags-selected{
-	border: 1px solid #ea443e;
+	border: 1px solid #6C7A89;
 	color: #ffffff;
-	background-color: #ea443e;
+	background-color: #6C7A89;
 }
 
 .rotate180{
@@ -210,7 +210,7 @@ hr{
 	font-family: 'Helvetica', sans-serif;
 	font-weight: bold;
 	font-size: 2em;
-	color: #EA443E;
+	color: #6C7A89;
 	padding: 0.2em 0 0.2em 0;
 	text-align: center;
 	display: block;
@@ -223,13 +223,14 @@ hr{
 	-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
 	box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
 	display: block;
-	background-color: #e2e2e2;
+	background-color: #6C7A89;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
 
 .list{
+	overflow: auto;
 	padding: 0.75em 0.75em 0.75em 0.75em;
 	margin: 0 auto;
 	list-style: none;
@@ -274,16 +275,20 @@ hr{
 
 
 @media only screen and (min-width: 736px) and (orientation: landscape) {
-	.nav-wrap{
-		display: block;
-		position: relative;
-		float: left;
-		width: 35%;
+	html, body{
 		height: 100%;
+		overflow: hidden;
+	}
+	.nav-wrap{
+		float: left;
+		overflow: auto;
+	    display: inline-block;
+	    width: 35%;
+	    height: 100%;
 	}
 	.nav-head{
 		font-size: 100%;
-		padding: 2em 0.25em 2em 0.25em;
+		padding: 3em 0.5em 3em 0.35em;
 	}
 	.nav-body{
 		display: block;
@@ -297,12 +302,10 @@ hr{
 		border-radius: 10em;
 	}
 	.main{
-		margin: 0 auto;
-		padding: 0;
-		overflow: auto;
-		float: right;
-		width: 65%;
-		height: 100%;
+	    display: inline-block;
+	    overflow: auto;
+	    width: 65%;
+	    height: 100%;
 	}
 	.list{
 		padding: 1em 1em 0 1em;
@@ -322,6 +325,16 @@ hr{
 
 
 
+
+
+
+.navbar-custom{
+	height: 185px;
+	background-image: url("");
+	background-position: center;
+	ba
+	margin-bottom: 0px;
+}
 
 
 
